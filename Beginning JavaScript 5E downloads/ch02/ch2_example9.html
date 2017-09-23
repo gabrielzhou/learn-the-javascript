@@ -22,10 +22,20 @@
         personnel[2][0] = "Name2";
         personnel[2][1] = "Age2";
         personnel[2][2] = "Address2";
+	var i;
+	for(i=0;i<=2;i++)
+	{
 
-        document.write("Name : " + personnel[1][0] + "<br/>");
-        document.write("Age : " + personnel[1][1] + "<br/>");
-        document.write("Address : " + personnel[1][2]);
+        document.write("Name : " + personnel[i][0] + "<br/>");
+        document.write("Age : " + personnel[i][1] + "<br/>");
+        document.write("Address : " + personnel[i][2] + "<br/>" + "<br/>");
+	}
+	for(var i in personnel){
+		
+        document.write("Name : " + personnel[i][0] + "<br/>");
+        document.write("Age : " + personnel[i][1] + "<br/>");
+        document.write("Address : " + personnel[i][2] + "<br/>" + "<br/>");
+	}
     </script>
 </body>
 </html>

@@ -21,6 +21,16 @@
         } else {
             document.write("That is not a valid input");
         }
+	var numbers = [1,2,3,4,5];
+	function isLessThan3(value,index,arry){
+		var returnValue = false;
+		if(value<3){
+			returnValue = true;
+		}
+		return returnValue;
+	}
+	alert(numbers.every(isLessThan3));
+	alert(numbers.some(isLessThan3));
     </script>
 </body>
 </html>

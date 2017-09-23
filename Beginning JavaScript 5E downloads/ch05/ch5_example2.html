@@ -38,6 +38,17 @@
             default:
                 document.write("First character was not a character or a number");
         }
+	var mystring = "";
+	var charcode;
+	for(charcode =65;charcode<=90;charcode++){
+		//document.write(charcode + "</br>");
+		mystring = mystring + String.fromCharCode(charcode);
+	}
+	document.write(mystring);
+	mystring = prompt("please input your name");
+	mystring = mystring.trim();
+	document.write(mystring);
+	
     </script>
 </body>
 </html>

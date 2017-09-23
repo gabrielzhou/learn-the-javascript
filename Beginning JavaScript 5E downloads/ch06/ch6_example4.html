@@ -15,6 +15,9 @@
         text = text.replace(myRegExp, '"');
 
         document.write("Corrected: " + text);
+	text ="Beginning JavaScript, Beginning Java 2, " + "Professional Javascript";
+	var myregexp = /\bJava\b/i;
+	alert(text.search(myregexp));
     </script>
 </body>
 </html>

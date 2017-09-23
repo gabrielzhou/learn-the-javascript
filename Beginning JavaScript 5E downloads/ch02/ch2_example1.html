@@ -7,9 +7,17 @@
 <body>
     <script>
         var myFirstVariable;
+	if(myFirstVariable == undefined){
+		document.write("<h1>the value is undefined</h1>");
+	}
+	else document.write("the value is ok");
 
         myFirstVariable = "Hello,world";
         alert(myFirstVariable);
+	if(myFirstVariable == undefined){
+		document.write("the value is undefined");
+	}
+	else document.write("the value is ok");
 
         myFirstVariable = 54321;
         alert(myFirstVariable);

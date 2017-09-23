@@ -17,12 +17,28 @@
             foundAtPosition = myString.indexOf("Wrox", foundAtPosition);
 
             if (foundAtPosition != -1) {
+		document.write(foundAtPosition+"</br>");
                 wroxCount++;
                 foundAtPosition++;
             }
         }
 
-        document.write("There are " + wroxCount + " occurrences of the word Wrox");
+        document.write("There are " + wroxCount + " occurrences of the word Wrox</br>");
+	var myString = "javascript";
+	var mysubstring = myString.substr(1,5);
+	document.write(mysubstring+"</br>");
+	myString = "javascript";
+	mysubstring = myString.substring(1,5);
+	document.write(mysubstring.toUpperCase()+"</br>");
+	document.write(mysubstring+"</br>");
+	var fileName = window.location.href;
+	fileName = fileName.substr(fileName.lastIndexOf("/")+1);
+	document.write("the file name of this pase is " + fileName+"</br>");
+	myString = prompt("enter some text","hello,world");
+	var thelastchar =myString.charAt(myString.length - 1);
+	document.write("the last character is " + thelastchar+"</br>");
+	var thelastchar =myString.charCodeAt(myString.length - 1);
+	document.write("the last character is " + thelastchar+"</br>");
     </script>
 </body>
 </html>
